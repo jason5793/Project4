@@ -1,6 +1,6 @@
  body {
      font-family: Arial, sans-serif;
-     background-color: #ff0c0c;
+     background-color: #f80202;
      margin: 0;
      padding: 0;
  }
@@ -8,16 +8,14 @@
  .container {
      max-width: 600px;
      margin: 20px auto;
-     background-color: #84f5ff;
+     background-color: #03ff25;
      padding: 20px;
      border-radius: 5px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
  }
 
  h1 {
-    color: #28a745;
-    font-size: larger;
-    text-align: center;
+     text-align: center;
  }
 
  input[type="text"] {
@@ -25,7 +23,7 @@
      padding: 10px;
      margin-bottom: 10px;
      border-radius: 5px;
-     border: 1px solid #000000;
+     border: 1px solid #f4ff23;
  }
 
  ul {
@@ -43,7 +41,7 @@
 
  li.completed {
      text-decoration: line-through;
-     color: #888;
+     color: #f11717;
  }
 
  .actions {
@@ -70,5 +68,5 @@
 
  .actions button.complete {
      background-color: #28a745;
-     color: #fff;
+     color: #50ff31;
  }

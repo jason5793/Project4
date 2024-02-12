@@ -21,7 +21,9 @@
           taskList.appendChild(li);
         });
       };
-        const addTask = () => {
+
+      // Function to add a new task
+      const addTask = () => {
         const text = taskInput.value.trim();
         if (text !== '') {
           tasks.push({ text, completed: false });
@@ -30,20 +32,28 @@
           taskInput.value = '';
         }
       };
-       const deleteTask = (index) => {
+
+      // Function to delete a task
+      const deleteTask = (index) => {
         tasks.splice(index, 1);
         localStorage.setItem('tasks', JSON.stringify(tasks));
         renderTasks();
       };
-       const toggleCompletion = (index) => {
+
+      // Function to toggle task completion
+      const toggleCompletion = (index) => {
         tasks[index].completed = !tasks[index].completed;
         localStorage.setItem('tasks', JSON.stringify(tasks));
         renderTasks();
       };
+
+      // Initial rendering
       renderTasks();
-       taskInput.addEventListener('keypress', (e) => {
+
+      // Event listener for adding a new task
+      taskInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
           addTask();
         }
       });
-});   
+   });
